@@ -1,0 +1,637 @@
+@font-face {
+    font-family: 'AvenirNextRegular';
+    src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+    font-family: 'AvenirNextBold';
+    src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #323232;
+    margin: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+header .head__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    header .head__logo {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .head__logo {
+        padding-left: 11.25rem;
+        padding-right: 3.5rem;
+    }
+}
+
+header .head__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'AvenirNextRegular';
+}
+
+@media screen and (min-width: 768px) {
+    header .head__nav {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 1.5rem;
+    }
+}
+
+header .head__nav a {
+    color: #E1E1E1;
+    text-decoration: none;
+}
+
+header .head__biography,
+header .head__biography--underline {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 0.3125rem;
+}
+
+@media screen and (min-width: 768px) {
+    header .head__biography,
+    header .head__biography--underline {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-right: 3.125rem;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .head__biography,
+    header .head__biography--underline {
+        margin-right: 3.5rem;
+    }
+}
+
+header .head__biography--underline {
+    border-bottom: 0.125rem solid white;
+}
+
+
+/* hero image portion */
+
+.heroimage {
+    background: url(../assets/Images/heroimage.jpg);
+    background-size: cover;
+    min-height: 11.4375rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .heroimage {
+        min-height: 25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroimage {
+        max-height: 41.875rem;
+    }
+}
+
+.heroimage__header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #E1E1E1;
+    padding-left: 1rem;
+    padding-top: 3.125rem;
+    font-family: 'AvenirNextBold';
+}
+
+@media screen and (min-width: 768px) {
+    .heroimage__header {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        padding-left: 1.5rem;
+        font-family: 'AvenirNextBold';
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroimage__header {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        padding-left: 11.25rem;
+        padding-top: 10%;
+        font-family: 'AvenirNextBold';
+    }
+}
+
+
+/*SUBHEADING H1 AND IMAGE*/
+
+.aboutmusician__header1 {
+    padding: 2rem 1rem 1.5rem 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+    font-family: 'AvenirNextBold';
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__header1 {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding-left: 1.5rem;
+        font-family: 'AvenirNextBold';
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__header1 {
+        padding-left: 11.25rem;
+        padding-top: 3rem;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        font-family: 'AvenirNextBold';
+    }
+}
+
+.aboutmusician__image {
+    width: 18rem;
+    height: 9.0625rem;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__image {
+        width: 45rem;
+        height: 22.625rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__image {
+        max-width: 56rem;
+        max-height: 28.125rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.aboutmusician__header2 {
+    padding: 1.5rem 1rem 2rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+    font-family: 'AvenirNextDemiBold';
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__header2 {
+        padding-left: 1.5rem;
+        padding-right: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-family: 'AvenirNextBold';
+    }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+    .aboutmusician__header2 {
+        font-family: 'AvenirNextBold';
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 3rem 15rem 2.5rem 17.5rem;
+    }
+}
+
+.aboutmusician__header3 {
+    padding-bottom: 2.5rem;
+    padding-left: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: 'AvenirNextDemiBold';
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__header3 {
+        padding-left: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'AvenirNextDemiBold';
+    }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+    .aboutmusician__header3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'AvenirNextDemiBold';
+        padding-left: 15rem;
+    }
+}
+
+.aboutmusician__header3__sub {
+    font-family: 'AvenirNextDemiBold';
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__header3__sub {
+        padding-left: 1.5rem;
+        font-family: 'AvenirNextBold';
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__header3__sub {
+        font-family: 'AvenirNextBold';
+        padding-left: 15rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__paragraphcontainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: 'AvenirNextRegular';
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__paragraphcontainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: 'AvenirNextRegular';
+    }
+}
+
+.aboutmusician__paragraph1 {
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: 'AvenirNextRegular';
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__paragraph1 {
+        font-family: 'AvenirNextRegular';
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        width: 21.75rem;
+        padding-left: 1.5rem;
+        padding-right: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__paragraph1 {
+        font-family: 'AvenirNextRegular';
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        width: 21.25rem;
+        margin-left: 15rem;
+        margin-right: 2.5rem;
+    }
+}
+
+.aboutmusician__paragraph2 {
+    padding-bottom: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-family: 'AvenirNextRegular';
+}
+
+@media screen and (min-width: 768px) {
+    .aboutmusician__paragraph2 {
+        font-family: 'AvenirNextRegular';
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        width: 21.75rem;
+        padding-right: 1.5rem;
+        padding-left: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutmusician__paragraph2 {
+        font-family: 'AvenirNextRegular';
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        width: 21.25rem;
+        margin-right: 15rem;
+    }
+}
+
+
+/* PHOTO GALLERY */
+
+.container {
+    margin: 0 auto;
+    width: 18rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 45rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 67.5rem;
+    }
+}
+
+.photogallery {
+    background-color: #E1E1E1;
+    width: 100%;
+}
+
+.photogallery__incontainer {
+    margin: 0 auto;
+}
+
+.photogallery__header {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .photogallery__header {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .photogallery__header {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photogallery__imagecontainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.photogallery__image {
+    width: 18rem;
+    height: 9.0625rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.photogallery__image:nth-child(3n) {
+    margin-right: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+    .photogallery__image {
+        width: 14rem;
+        height: 7.875rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .photogallery__image {
+        width: 21.5rem;
+        height: 12.0625rem;
+    }
+}
+
+
+/*FOOTER */
+
+.footer {
+    background-color: #323232;
+    color: #FFFFFF;
+}
+
+.footer__header1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-top: 3.125rem;
+    padding-left: 1rem;
+    font-family: 'AvenirNextBold';
+}
+
+@media screen and (min-width: 768px) {
+    .footer__header1 {
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__header1 {
+        padding-top: 3rem;
+    }
+}
+
+.footer__logo {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__logo {
+        display: inline;
+        padding-top: 3.125rem;
+        margin-left: auto;
+    }
+}
+
+.footer__icon {
+    padding-left: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__icon {
+        padding-bottom: 0rem;
+        padding-top: 3.125rem;
+        padding-left: 3.75rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__logoicon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.footer__information {
+    width: 20rem;
+    padding-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__information {
+        width: 48rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 3.125rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.footer__icon1 {
+    margin-right: 1.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__icon1 {
+        margin-right: 2rem;
+    }
+}
+
+.footer__icon2 {
+    margin-right: 1.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__icon2 {
+        margin-right: 2rem;
+    }
+}
+
+.footer__address {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'AvenirNextRegular';
+    padding-bottom: 1.25rem;
+}
+
+.footer__info {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'AvenirNextRegular';
+    padding-bottom: 1.25rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__info {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.footer__header2 {
+    padding-bottom: 1.5rem;
+}
+
+.footer__person {
+    padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__person {
+        padding-top: 3.5rem;
+    }
+}
+
+.footer__copyright {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'AvenirNextRegular';
+    padding-right: 1rem;
+    padding-bottom: 3.125rem;
+    padding-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__copyright {
+        padding-left: 1.5rem;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

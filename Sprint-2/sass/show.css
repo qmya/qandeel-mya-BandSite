@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'AvenirNextRegular';
+  src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+}
+
+body {
+  font-family: 'AvenirNextRegular';
+}
+
+.hero {
+  background: url(../assets/Images/heroimage.jpg);
+  background-size: cover;
+  min-height: 472px;
+  width: 100%;
+  margin: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 670px;
+  }
+}
+
+.hero__container {
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 720px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__container {
+    width: 840px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__containerheader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero__header1 {
+  padding-top: 64px;
+  line-height: 32px;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__header1 {
+    line-height: 44px;
+    font-size: 36px;
+    padding-top: 96px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__header1 {
+    padding-top: 160px;
+  }
+}
+
+.hero__header {
+  line-height: 44px;
+  font-size: 36px;
+  color: white;
+  padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__header {
+    padding-top: 45px;
+    line-height: 68px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__header {
+    margin-right: 64px;
+  }
+}
+
+.hero__song {
+  height: 80px;
+  width: 288px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__song {
+    width: 436px;
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__song {
+    margin-top: 55px;
+  }
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 288px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .show {
+    width: 720px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show {
+    width: 840px;
+    margin: auto;
+  }
+}
+
+.show__bar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .show__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.show__but {
+  visibility: hidden;
+}
+
+.show__header {
+  padding-top: 32px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'AvenirNextDemiBold';
+}
+
+@media screen and (min-width: 768px) {
+  .show__header {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.show__child {
+  border-bottom: 2px solid #AFAFAF;
+  width: 288px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__child {
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show__child {
+    width: 804px;
+  }
+}
+
+.show__header1, .show__headerbig {
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFAFAF;
+  padding-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__header1, .show__headerbig {
+    display: none;
+  }
+}
+
+.show__header2 {
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__header2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.show__header2__bold {
+  font-family: 'AvenirNextDemiBold';
+}
+
+@media screen and (min-width: 768px) {
+  .show__headerbig {
+    display: inline-block;
+  }
+}
+
+.show__button {
+  width: 288px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  background-color: #323232;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__button {
+    width: 150px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=show.css.map */

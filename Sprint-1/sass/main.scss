@@ -1,0 +1,442 @@
+    @import './partials/mixin';
+    @import './partials/variables';
+    @font-face {
+        font-family: 'AvenirNextRegular';
+        src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+    }
+    
+    @font-face {
+        font-family: 'AvenirNextDemiBold';
+        src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+    }
+    
+    @font-face {
+        font-family: 'AvenirNextBold';
+        src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+    }
+    
+    * {
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+    }
+    
+    header {
+        width: 100%;
+        height: 5rem;
+        background-color: #323232;
+        margin: 0rem;
+        @include tablet {
+            display: flex;
+        }
+        .head {
+            &__logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                @include tablet {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+                @include desktop {
+                    padding-left: 11.25rem;
+                    padding-right: 3.5rem;
+                }
+            }
+            &__nav {
+                display: flex;
+                font-family: 'AvenirNextRegular';
+                @include tablet {
+                    align-items: center;
+                    padding-left: 1.5rem;
+                }
+                a {
+                    color: #E1E1E1;
+                    text-decoration: none;
+                }
+            }
+            &__biography {
+                text-align: center;
+                width: 50%;
+                padding-bottom: 0.3125rem;
+                @include tablet {
+                    width: fit-content;
+                    margin-right: 3.125rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                @include desktop {
+                    margin-right: 3.5rem;
+                }
+                &--underline {
+                    border-bottom: 0.125rem solid white;
+                    @extend .head__biography;
+                }
+            }
+        }
+    }
+    /* hero image portion */
+    
+    .heroimage {
+        background: url(../assets/Images/heroimage.jpg);
+        background-size: cover;
+        min-height: 11.4375rem;
+        width: 100%;
+        @include tablet {
+            min-height: 25rem;
+        }
+        @include desktop {
+            max-height: 41.875rem;
+        }
+        &__header {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #E1E1E1;
+            padding-left: 1rem;
+            padding-top: 3.125rem;
+            font-family: 'AvenirNextBold';
+            @include tablet {
+                font-size: 3.75rem;
+                line-height: 4.25rem;
+                padding-left: 1.5rem;
+                font-family: 'AvenirNextBold';
+            }
+            @include desktop {
+                font-size: 3.75rem;
+                line-height: 4.25rem;
+                padding-left: 11.25rem;
+                padding-top: 10%;
+                font-family: 'AvenirNextBold';
+            }
+        }
+    }
+    /*SUBHEADING H1 AND IMAGE*/
+    
+    .aboutmusician {
+        &__header1 {
+            padding: 2rem 1rem 1.5rem 1rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #323232;
+            font-family: 'AvenirNextBold';
+            @include tablet {
+                font-size: 2.25rem;
+                line-height: 2.75rem;
+                padding-left: 1.5rem;
+                font-family: 'AvenirNextBold';
+            }
+            @include desktop {
+                padding-left: 11.25rem;
+                padding-top: 3rem;
+                font-size: 2.25rem;
+                line-height: 2.75rem;
+                font-family: 'AvenirNextBold';
+            }
+        }
+        &__image {
+            width: 18rem;
+            height: 9.0625rem;
+            display: block;
+            margin: 0 auto;
+            @include tablet {
+                width: 45rem;
+                height: 22.625rem;
+                display: block;
+                margin: 0 auto;
+            }
+            @include desktop {
+                max-width: 56rem;
+                max-height: 28.125rem;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__header2 {
+            padding: 1.5rem 1rem 2rem 1rem;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-bottom: 2rem;
+            text-align: justify;
+            font-family: 'AvenirNextDemiBold';
+            @include tablet {
+                padding-left: 1.5rem;
+                padding-right: 2.5rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: 'AvenirNextBold';
+                @include desktop {
+                    font-family: 'AvenirNextBold';
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    padding: 3rem 15rem 2.5rem 17.5rem;
+                }
+            }
+        }
+        &__header3 {
+            padding-bottom: 2.5rem;
+            padding-left: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            font-family: 'AvenirNextDemiBold';
+            @include tablet {
+                padding-left: 1.5rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-family: 'AvenirNextDemiBold';
+                @include desktop {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-family: 'AvenirNextDemiBold';
+                    padding-left: 15rem;
+                }
+            }
+            &__sub {
+                font-family: 'AvenirNextDemiBold';
+                padding-bottom: 1.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                @include tablet {
+                    padding-left: 1.5rem;
+                    font-family: 'AvenirNextBold';
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+                @include desktop {
+                    font-family: 'AvenirNextBold';
+                    padding-left: 15rem;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+        &__paragraphcontainer {
+            @include tablet {
+                display: flex;
+                font-family: 'AvenirNextRegular';
+            }
+            @include desktop {
+                display: flex;
+                font-family: 'AvenirNextRegular';
+            }
+        }
+        &__paragraph1 {
+            padding-bottom: 1.5rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-family: 'AvenirNextRegular';
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            @include tablet {
+                font-family: 'AvenirNextRegular';
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 21.75rem;
+                padding-left: 1.5rem;
+                padding-right: 0.75rem;
+            }
+            @include desktop {
+                font-family: 'AvenirNextRegular';
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 21.25rem;
+                margin-left: 15rem;
+                margin-right: 2.5rem;
+            }
+        }
+        &__paragraph2 {
+            padding-bottom: 2.5rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            font-family: 'AvenirNextRegular';
+            @include tablet {
+                font-family: 'AvenirNextRegular';
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 21.75rem;
+                padding-right: 1.5rem;
+                padding-left: 0.75rem;
+            }
+            @include desktop {
+                font-family: 'AvenirNextRegular';
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                width: 21.25rem;
+                margin-right: 15rem;
+            }
+        }
+    }
+    /* PHOTO GALLERY */
+    
+    .container {
+        margin: 0 auto;
+        width: 18rem;
+        overflow-x: hidden;
+        @include tablet {
+            width: 45rem;
+        }
+        @include desktop {
+            width: 67.5rem;
+        }
+    }
+    
+    .photogallery {
+        background-color: #E1E1E1;
+        width: 100%;
+        &__incontainer {
+            margin: 0 auto;
+        }
+        &__header {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1rem;
+            align-self: flex-start;
+            @include tablet {
+                font-size: 3.75rem;
+                line-height: 4.25rem;
+            }
+            @include desktop {
+                font-size: 3.75rem;
+                line-height: 4.25rem;
+                align-self: flex-start;
+            }
+        }
+        &__imagecontainer {
+            @include tablet {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            @include desktop {}
+        }
+        &__image {
+            width: 18rem;
+            height: 9.0625rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            &:nth-child(3n) {
+                margin-right: 0rem;
+            }
+            @include tablet {
+                width: 14rem;
+                height: 7.875rem;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            @include desktop {
+                width: 21.5rem;
+                height: 12.0625rem;
+            }
+        }
+    }
+    /*FOOTER */
+    
+    .footer {
+        background-color: #323232;
+        color: #FFFFFF;
+        &__header1 {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding-top: 3.125rem;
+            padding-left: 1rem;
+            font-family: 'AvenirNextBold';
+            @include tablet {
+                padding-left: 1.5rem;
+            }
+            @include desktop {
+                padding-top: 3rem;
+            }
+        }
+        &__logo {
+            display: none;
+            @include tablet {
+                display: inline;
+                padding-top: 3.125rem;
+                margin-left: auto;
+            }
+        }
+        &__icon {
+            padding-left: 1rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            display: flex;
+            @include tablet {
+                padding-bottom: 0rem;
+                padding-top: 3.125rem;
+                padding-left: 3.75rem;
+            }
+        }
+        &__logoicon {
+            @include tablet {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &__information {
+            width: 20rem;
+            padding-left: 1rem;
+            @include tablet {
+                width: 48rem;
+                display: flex;
+                padding-top: 3.125rem;
+                padding-left: 1.5rem;
+            }
+        }
+        &__icon1 {
+            margin-right: 1.875rem;
+            @include desktop {
+                margin-right: 2rem;
+            }
+        }
+        &__icon2 {
+            margin-right: 1.875rem;
+            @include desktop {
+                margin-right: 2rem;
+            }
+        }
+        &__address {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-family: 'AvenirNextRegular';
+            padding-bottom: 1.25rem;
+        }
+        &__info {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-family: 'AvenirNextRegular';
+            padding-bottom: 1.25rem;
+            justify-content: space-between;
+            @include desktop {
+                padding-bottom: 2.5rem;
+            }
+        }
+        &__header2 {
+            padding-bottom: 1.5rem;
+        }
+        &__person {
+            padding-right: 1.5rem;
+            @include desktop {
+                padding-top: 3.5rem;
+            }
+        }
+        &__copyright {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-family: 'AvenirNextRegular';
+            padding-right: 1rem;
+            padding-bottom: 3.125rem;
+            padding-left: 1rem;
+            @include tablet {
+                padding-left: 1.5rem;
+                padding-top: 3.125rem;
+                padding-bottom: 3.125rem;
+            }
+        }
+    }
