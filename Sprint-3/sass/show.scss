@@ -1,0 +1,180 @@
+@import './partials/mixin';
+@import './partials/variables';
+@font-face {
+    font-family: 'AvenirNextRegular';
+    src: url("../assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+}
+
+body {
+    font-family: 'AvenirNextRegular';
+}
+
+.hero {
+    background: url(../assets/Images/heroimage.jpg);
+    background-size: cover;
+    min-height: 472px;
+    width: 100%;
+    margin: 0rem;
+    @include tablet {
+        min-height: 670px;
+    }
+    &__container {
+        width: 288px;
+        margin-left: 16px;
+        margin-right: 16px;
+        @include tablet {
+            width: 720px;
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+        @include desktop {
+            width: 840px;
+            margin-left: 180px;
+            margin-right: 180px;
+        }
+    }
+    &__containerheader {
+        @include desktop {
+            display: flex;
+        }
+    }
+    &__header1 {
+        padding-top: 64px;
+        line-height: 32px;
+        font-size: 24px;
+        color: white;
+        @include tablet {
+            line-height: 44px;
+            font-size: 36px;
+            padding-top: 96px;
+        }
+        @include desktop {
+            padding-top: 160px;
+        }
+    }
+    &__header {
+        line-height: 44px;
+        font-size: 36px;
+        color: white;
+        padding-bottom: 64px;
+        @include tablet {
+            padding-top: 45px;
+            line-height: 68px;
+            font-size: 60px;
+        }
+        @include desktop {
+            margin-right: 64px;
+        }
+    }
+    &__song {
+        height: 80px;
+        width: 288px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        @include tablet {
+            width: 436px;
+            height: 146px;
+        }
+        @include desktop {
+            margin-top: 55px;
+        }
+    }
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    margin: auto;
+    @include tablet {
+        width: 720px;
+        margin: auto;
+    }
+    @include desktop {
+        width: 840px;
+        margin: auto;
+    }
+    &__bar {
+        display: none;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__but {
+        visibility: hidden;
+    }
+    &__header {
+        padding-top: 32px;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'AvenirNextDemiBold';
+        @include tablet {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+    &__child {
+        border-bottom: 2px solid #AFAFAF;
+        width: 288px;
+        margin-bottom: 32px;
+        @include tablet {
+            width: 720px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include desktop {
+            width: 804px;
+        }
+    }
+    &__header1 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #AFAFAF;
+        padding-top: 24px;
+        @include tablet {
+            display: none;
+        }
+    }
+    &__header2 {
+        font-size: 12px;
+        line-height: 24px;
+        padding-top: 16px;
+        @include tablet {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__bold {
+            font-family: 'AvenirNextDemiBold';
+        }
+    }
+    &__headerbig {
+        @extend .show__header1;
+        @include tablet {
+            display: inline-block;
+        }
+    }
+    &__button {
+        width: 288px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FAFAFA;
+        background-color: #323232;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        @include tablet {
+            width: 150px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
