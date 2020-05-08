@@ -1,7 +1,7 @@
 //The url for the API 
 const apiBaseURL = 'https://project-1-api.herokuapp.com/';
 
-//got API key and declare it to a variable
+//got API key and Store the key in a global variable in your website.
 const apikey = '?api_key=235fe40a-464c-48d5-8c8c-30f4d0948e00';
 
 
@@ -80,8 +80,10 @@ function getComments() {
     axios.get(apiBaseURL + 'comments' + apikey)
         .then(results => {
             console.log(results.data);
+            /* comment.timestamp.sort();*/
 
             //sort the comments by timestamp using .sort
+
             results.data.forEach(comment => {
                 const commentItemEl = displayComment(comment);
                 container.appendChild(commentItemEl);
