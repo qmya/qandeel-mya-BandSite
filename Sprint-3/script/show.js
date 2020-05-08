@@ -1,3 +1,12 @@
+//The url for the API 
+const apiBaseURL = 'https://project-1-api.herokuapp.com/';
+
+//got API key and declare it to a variable
+const apikey = '?api_key=235fe40a-464c-48d5-8c8c-30f4d0948e00';
+
+
+
+
 const container = document.querySelector('.show');
 const shows = [
 
