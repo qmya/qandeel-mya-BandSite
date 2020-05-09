@@ -13,6 +13,7 @@ body {
   min-height: 472px;
   width: 100%;
   margin: 0rem;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,20 +126,23 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 288px;
-  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   .show {
     width: 720px;
-    margin: auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .show {
-    width: 840px;
-    margin: auto;
+    width: 1200px;
+    /* margin-left: 180px;
+        margin-right: 180px;*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -148,12 +152,39 @@ body {
 
 @media screen and (min-width: 768px) {
   .show__bar {
+    width: 720px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show__bar {
+    width: 640px;
+    padding-top: 20px;
+    position: relative;
+  }
+}
+
+.show__table {
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__table {
+    width: 720px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show__table {
+    width: 640px;
   }
 }
 
@@ -162,6 +193,7 @@ body {
 }
 
 .show__header {
+  padding-left: 16px;
   padding-top: 32px;
   font-size: 24px;
   line-height: 32px;
@@ -172,6 +204,13 @@ body {
   .show__header {
     font-size: 36px;
     line-height: 44px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show__header {
+    padding-left: 180px;
   }
 }
 
@@ -190,12 +229,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    /* position: relative;*/
   }
 }
 
 @media screen and (min-width: 1024px) {
   .show__child {
-    width: 804px;
+    width: 640px;
   }
 }
 
@@ -220,8 +260,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .show__header2 {
+    width: 150px;
     font-size: 16px;
     line-height: 24px;
+    /*  &:nth-child(4) {
+                position: absolute;
+                left: 250px;
+            }
+            &:nth-child(6) {
+                position: absolute;
+                left: 500px;
+            }*/
   }
 }
 
@@ -229,9 +278,34 @@ body {
   font-family: 'AvenirNextDemiBold';
 }
 
+@media screen and (min-width: 1024px) {
+  .show__header2 {
+    width: 150px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .show__headerbig {
     display: inline-block;
+  }
+  .show__headerbig:nth-child(2) {
+    position: absolute;
+    left: 190px;
+  }
+  .show__headerbig:nth-child(3) {
+    position: absolute;
+    left: 380px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show__headerbig:nth-child(2) {
+    position: absolute;
+    left: 164px;
+  }
+  .show__headerbig:nth-child(3) {
+    position: absolute;
+    left: 320px;
   }
 }
 

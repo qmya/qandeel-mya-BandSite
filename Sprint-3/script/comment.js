@@ -2,7 +2,7 @@
 const apiBaseURL = 'https://project-1-api.herokuapp.com/';
 
 //got API key and Store the key in a global variable in your website.
-const apikey = '?api_key=235fe40a-464c-48d5-8c8c-30f4d0948e00';
+const apiKey = '?api_key=235fe40a-464c-48d5-8c8c-30f4d0948e00';
 
 
 
@@ -77,16 +77,20 @@ const displayComment = commentData => {
 
 function getComments() {
 
-    axios.get(apiBaseURL + 'comments' + apikey)
+    axios.get(apiBaseURL + 'comments' + apiKey)
         .then(results => {
             console.log(results.data);
-            /* comment.timestamp.sort();*/
+
+            results.data.sort((a, b) => (a.timestamp < b.timestamp) ? 1 : -1);
+
+            /*  comment.sort(timestamp);
+              comment.timestamp.sort();*/
 
             //sort the comments by timestamp using .sort
 
             results.data.forEach(comment => {
-                const commentItemEl = displayComment(comment);
-                container.appendChild(commentItemEl);
+                const cat = displayComment(comment);
+                container.appendChild(cat);
 
             });
         });
@@ -104,7 +108,7 @@ myForm.addEventListener('submit', e => {
         comment: event.target.comment.value,
 
     }
-    axios.post(apiBaseURL + 'comments' + apikey, comment)
+    axios.post(apiBaseURL + 'comments' + apiKey, comment)
         .then(results => {
             while (container.firstElementChild) {
                 container.removeChild(container.firstElementChild);
