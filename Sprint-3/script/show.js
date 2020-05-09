@@ -4,77 +4,16 @@ const apiBaseURL = 'https://project-1-api.herokuapp.com/';
 //got API key and Store the key in a global variable in your website.
 const apiKey = '?api_key=235fe40a-464c-48d5-8c8c-30f4d0948e00';
 
-
-
-
-/*
-const shows = [
-
-    {
-        date: 'DATE',
-        dateday: 'Mon Dec 17 2018',
-        venue: 'VENUE',
-        place: 'Ronald Lane',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-    {
-        date: 'DATE',
-        dateday: 'Tue Jul 18 2019',
-        venue: 'VENUE',
-        place: 'Pier 3 East',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-    {
-        date: 'DATE',
-        dateday: 'Mon Dec 17 2018',
-        venue: 'VENUE',
-        place: 'View Loungue',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-
-    {
-        date: 'DATE',
-        dateday: 'Sat Aug 12 2019',
-        venue: 'VENUE',
-        place: 'Hyatt Agency',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-    {
-        date: 'DATE',
-        dateday: 'Fri Sep 05 2019',
-        venue: 'VENUE',
-        place: 'Moscow Center',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-
-    {
-        date: 'DATE',
-        dateday: 'Wed Aug 11 2019',
-        venue: 'VENUE',
-        place: 'Moscow Center',
-        location: 'LOCATION',
-        city: 'San Fancisco, CA'
-    },
-];    */
+//GETTING ALL ELEMENTS WITH SPECIFIED CLASS NAME
 const container = document.querySelector('.show');
 const table = document.createElement('div');
 table.classList.add('show__table');
 container.appendChild(table);
 
+//CREATING INNER ELEMENTS AND CLASSES FOR THE OBJECT ARRAY
 function displayShows(showsObject) {
-
-
     let shows = document.createElement('div');
     shows.classList.add('show__child');
-
-
-
-
 
     let date = document.createElement('p');
     date.classList.add('show__header1');
@@ -82,7 +21,6 @@ function displayShows(showsObject) {
     let dateday = document.createElement('p');
     dateday.classList.add('show__header2');
     dateday.classList.add('show__header2__bold');
-
 
     dateday.innerText = showsObject.date;
     let venue = document.createElement('p');
@@ -101,9 +39,6 @@ function displayShows(showsObject) {
     button.classList.add('show__button');
     button.innerText = "BUY TICKETS";
 
-
-
-
     shows.appendChild(date);
     shows.appendChild(dateday);
     shows.appendChild(venue);
@@ -111,7 +46,6 @@ function displayShows(showsObject) {
     shows.appendChild(location);
     shows.appendChild(city);
     shows.appendChild(button);
-
 
     table.appendChild(shows);
 }
@@ -141,19 +75,13 @@ bar.appendChild(but);
 
 table.appendChild(bar);
 
-
-/*shows.forEach(item => {
-    displayShows(item)
-});*/
-
-
+//GETTING DATA FROM APIs
+//display the shows data retrieved from the API.
 getShows = () => {
 
     axios.get(apiBaseURL + 'showDates' + apiKey)
         .then(results => {
             console.log(results.data);
-
-
             results.data.forEach(shows => {
                 displayShows(shows);
 
@@ -161,4 +89,6 @@ getShows = () => {
 
         });
 }
+
+//INVOKING GETCOMMENT()
 getShows();
