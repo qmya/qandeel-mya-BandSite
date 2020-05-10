@@ -518,6 +518,12 @@ header .head__biography--underline {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .box__header {
+    padding-left: 180px;
+  }
+}
+
 .box__wrap {
   padding: 0 1rem;
 }
@@ -592,6 +598,30 @@ header .head__biography--underline {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.box__name::-webkit-input-placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-family: 'AvenirNextRegular';
+}
+
+.box__name:-ms-input-placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-family: 'AvenirNextRegular';
+}
+
+.box__name::-ms-input-placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-family: 'AvenirNextRegular';
+}
+
+.box__name::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-family: 'AvenirNextRegular';
 }
 
 .box__name:focus {

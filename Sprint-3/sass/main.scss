@@ -376,6 +376,9 @@
                 line-height: 44px;
                 padding-left: 40px;
             }
+            @include desktop {
+                padding-left: 180px;
+            }
         }
         &__wrap {
             padding: 0 1rem;
@@ -433,6 +436,11 @@
             -moz-border-radius: 5px;
             -ms-border-radius: 5px;
             -o-border-radius: 5px;
+            &::placeholder {
+                color: black;
+                font-size: 1.2em;
+                font-family: 'AvenirNextRegular';
+            }
             &:focus {
                 border: 2px solid black;
             }
