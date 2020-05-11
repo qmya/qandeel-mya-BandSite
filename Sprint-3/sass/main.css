@@ -502,10 +502,10 @@ header .head__biography--underline {
 }
 
 .box__header {
-  padding-top: 32px;
-  padding-bottom: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 2rem;
   padding-left: 16px;
   font-family: 'AvenirNextDemiBold';
 }
@@ -514,7 +514,7 @@ header .head__biography--underline {
   .box__header {
     font-size: 36px;
     line-height: 44px;
-    padding-left: 40px;
+    padding-left: 2.5rem;
   }
 }
 
@@ -536,27 +536,27 @@ header .head__biography--underline {
 
 @media screen and (min-width: 1024px) {
   .box__wrap {
-    padding: 0 350px 40px 350px;
+    padding: 0 350px 2.5rem 350px;
   }
 }
 
 .box__circle {
   background: url("../assets/Images/person1.jpg");
   background-position: center;
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 100%;
-  margin-right: 10px;
-  margin-top: 30px;
+  margin-right: 0.625rem;
+  margin-top: 1.875rem;
 }
 
 .box__icon {
   background-position: center;
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 100%;
-  margin-right: 10px;
-  margin-top: 30px;
+  margin-right: 0.625rem;
+  margin-top: 1.875rem;
   background-color: #AFAFAF;
 }
 
@@ -577,7 +577,7 @@ header .head__biography--underline {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'AvenirNextDemiBold';
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
 }
 
 .box__commentheading {
@@ -588,39 +588,18 @@ header .head__biography--underline {
 
 .box__name {
   width: 100%;
-  height: 40px;
-  margin-top: 10px;
-  padding: 12px 20px;
-  margin-bottom: 20px;
+  height: 2.5rem;
+  margin-top: 0.625rem;
+  padding: 12px 1.25rem;
+  margin-bottom: 1.25rem;
   border: 2px solid #E1E1E1;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-}
-
-.box__name::-webkit-input-placeholder {
   color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__name:-ms-input-placeholder {
-  color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__name::-ms-input-placeholder {
-  color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__name::placeholder {
-  color: black;
-  font-size: 1.2em;
+  font-size: 15px;
   font-family: 'AvenirNextRegular';
 }
 
@@ -637,31 +616,10 @@ header .head__biography--underline {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  margin-top: 10px;
-  padding: 12px 20px;
-}
-
-.box__comment::-webkit-input-placeholder {
+  margin-top: 0.625rem;
+  padding: 12px 1.25rem;
   color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__comment:-ms-input-placeholder {
-  color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__comment::-ms-input-placeholder {
-  color: black;
-  font-size: 1.2em;
-  font-family: 'AvenirNextRegular';
-}
-
-.box__comment::placeholder {
-  color: black;
-  font-size: 1.2em;
+  font-size: 15px;
   font-family: 'AvenirNextRegular';
 }
 
@@ -675,11 +633,11 @@ header .head__biography--underline {
   line-height: 24px;
   background-color: #323232;
   width: 224px;
-  height: 40px;
+  height: 2.5rem;
   border-radius: 5px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
